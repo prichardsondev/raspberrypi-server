@@ -12,7 +12,6 @@ socket.on('updateClient', data => {
 });
 
 function toggle(pin) {
-    console.log(pin);
     socket.emit('updateServer', pin);
 }
 

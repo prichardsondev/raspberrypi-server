@@ -13,18 +13,17 @@ var path = require('path');
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/js', express.static(path.join(__dirname, '/node_modules/socket.io-client/dist')));
-app.use('/js', express.static(path.join(__dirname, '/node_modules/jquery/dist')));
+//app.use('/js', express.static(path.join(__dirname, '/node_modules/jquery/dist')));
 
-console.log(path.join(__dirname, '/node_modules/socket.io-client/dist'));
 
 app.get('/', (req, res) => {
   res.sendFile('index.html');
 });
 
 io.on('connection', (socket) => {
-    //send (just to new client)
+    //send to client (index.html) when connected
     socket.emit('updateClient', update());
-    //receive
+    //received from client (index.html)
     socket.on('updateServer', pin => {
         togglePin(pin);
     });
@@ -43,7 +42,7 @@ function update(){
 }
 
 http.listen(3000, () => {
-  console.log('listening on *:3000');
+  console.log('listening on port 3000');
 });
 
 
