@@ -44,3 +44,6 @@ https://www.dataplicity.com/
 
 *Install PM2
 Video link
+-npm install pm2 -g
+-pm2 start app.js
+-pm2 startup
