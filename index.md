@@ -4,7 +4,7 @@ In the following steps we will create Rasbperry Pi IoT Server with Nodejs, Expre
 
 
 ### Overview
-[Video] (http://placeholder.com)
+[Video](http://placeholder.com)
 
 
 ### Download OS and Boot Pi
