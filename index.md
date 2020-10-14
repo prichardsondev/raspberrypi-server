@@ -3,34 +3,58 @@
 In the following steps we will create Rasbperry Pi IoT Server with Nodejs, Express, Socket.io, Nginx and PM2
 
 
-### Markdown
+### Overview
+[Link] (Video Link)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+### Download OS and Boot Pi
+Video link
+https://www.raspberrypi.org/downloads/
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+### Install NodeJS
+Video link
+https://www.nodesource.com/
+https://github.com/nodesource/distributions
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
+### GPIO Test
+Video Link
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Clone Git Repo / Test LED and Relay
+Video link
+https://github.com/prichardsondev/RaspberryPiServer
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/prichardsondev/RaspberryPiServer/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### Install NginX & Test
+Video link
+-sudo apt-get install nginx
+-sudo rm /etc/nginx/sites-enabled/default
+-sudo nano /etc/nginx/sites-available/node
 
-### Support or Contact
+server {
+    listen 80;
+    server_name localhost;
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+    location / {
+        proxy_set_header   X-Forwarded-For $remote_addr;
+        proxy_set_header   Host $http_host;
+        proxy_pass         "http://127.0.0.1:3000";
+    }
+}
+
+-sudo ln -s /etc/nginx/sites-available/node /etc/nginx/sites-enabled/node
+-sudo service nginx restart
+
+
+### Install Dataplicity.com
+Video link
+https://www.dataplicity.com/
+
+
+### Install PM2
+Video link
+-npm install pm2 -g
+-pm2 start app.js
+-pm2 startup
