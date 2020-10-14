@@ -32,7 +32,7 @@ Video link
 -sudo apt-get install nginx  
 -sudo rm /etc/nginx/sites-enabled/default  
 -sudo nano /etc/nginx/sites-available/node  
-
+```
 server {
     listen 80;
     server_name localhost;
@@ -43,7 +43,7 @@ server {
         proxy_pass         "http://127.0.0.1:3000";
     }
 }
-
+```
 -sudo ln -s /etc/nginx/sites-available/node /etc/nginx/sites-enabled/node  
 -sudo service nginx restart
 
