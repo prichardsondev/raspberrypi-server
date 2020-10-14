@@ -8,27 +8,27 @@ In the following steps we will create Rasbperry Pi IoT Server with Nodejs, Expre
 
 
 ### Download OS and Boot Pi
-Video link  
+[Video](http://placeholder.com)
 https://www.raspberrypi.org/downloads/
 
 
 ### Install NodeJS
-Video link  
+[Video](http://placeholder.com)
 https://www.nodesource.com/  
 https://github.com/nodesource/distributions
 
 
 ### GPIO Test
-Video Link
+[Video](http://placeholder.com)
 
 
 ### Clone Git Repo / Test LED and Relay
-Video link  
+[Video](http://placeholder.com)
 https://github.com/prichardsondev/RaspberryPiServer
 
 
 ### Install NginX & Test
-Video link  
+[Video](http://placeholder.com) 
  sudo apt-get install nginx  
  sudo rm /etc/nginx/sites-enabled/default  
  sudo nano /etc/nginx/sites-available/node  
@@ -49,12 +49,12 @@ server {
 
 
 ### Install Dataplicity.com
-Video link  
+[Video](http://placeholder.com)  
 https://www.dataplicity.com/
 
 
 ### Install PM2
-Video link  
+[Video](http://placeholder.com)
  npm install pm2 -g  
  pm2 start app.js  
  pm2 startup  
