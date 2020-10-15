@@ -2,7 +2,7 @@
 
 In the following steps we will create a Rasbperry Pi IoT Server with Nodejs, Express, Socket.io, Nginx, PM2 and Dataplicity as a secure VPN tunnel.
 
-![Pic](/public/img/Slide2.png)
+![Pic](/public/img/Slide2.PNG)
 
 ### Overview
 [Video](http://placeholder.com)
