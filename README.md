@@ -25,7 +25,7 @@ https://github.com/nodesource/distributions
 
 ### Clone Git Repo / Test LED and Relay
 [Video](http://placeholder.com)  
-https://github.com/prichardsondev/RaspberryPiServer
+git clone https://github.com/prichardsondev/RaspberryPiServer
 
 
 ### Install NginX & Test
