@@ -30,7 +30,9 @@ https://github.com/nodesource/distributions
 
 ### Clone Git Repo / Test LED and Relay
 [Video](https://www.screencast.com/t/dxnVxYAJxX8)  
-git clone https://github.com/prichardsondev/RaspberryPiServer.git
+git clone https://github.com/prichardsondev/RaspberryPiServer.git  
+for version with pi camera  
+git git clone https://github.com/prichardsondev/RaspberryPiServerWithCamera.git
 
 
 
