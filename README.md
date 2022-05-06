@@ -33,7 +33,8 @@ https://github.com/nodesource/distributions
 ``` 
 git clone https://github.com/prichardsondev/RaspberryPiServer.git
 cd RaspberryPiServer
-npm i  
+npm i
+node app.js
 ```
 
 
@@ -77,6 +78,9 @@ https://www.dataplicity.com/
  sudo npm install pm2 -g  
  pm2 start app.js  
  pm2 startup
- //run script generated
- pm2 save
+```
+run script generated
+
+```
+pm2 save
 ```
