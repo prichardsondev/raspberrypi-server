@@ -70,4 +70,6 @@ https://www.dataplicity.com/
 [Video](https://www.screencast.com/t/brQiuYSyIy)  
  sudo npm install pm2 -g  
  pm2 start app.js  
- pm2 startup  
+ pm2 startup
+ //run script generated
+ pm2 save 
