@@ -58,10 +58,6 @@ server {
 
 
 ### Install Dataplicity.com
-#### You may need python2 for this to work
-#### New Raspberry PI OS come with Python3
-#### sudo apt-get install python
-#### reboot then install dataplicity
 [Video](https://www.screencast.com/t/KQtHAmH58sWT)  
 https://www.dataplicity.com/
 
@@ -70,4 +66,5 @@ https://www.dataplicity.com/
 [Video](https://www.screencast.com/t/brQiuYSyIy)  
  sudo npm install pm2 -g  
  pm2 start app.js  
- pm2 startup  
+ pm2 startup
+ pm2 save
