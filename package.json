@@ -16,8 +16,8 @@
   },
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
-    "onoff": "^6.0.0",
-    "socket.io": "^2.4.1"
+    "express": "^4.18.1",
+    "onoff": "^6.0.3",
+    "socket.io": "^4.5.0"
   }
 }

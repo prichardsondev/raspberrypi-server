@@ -29,18 +29,22 @@ https://github.com/nodesource/distributions
 
 
 ### Clone Git Repo / Test LED and Relay
-[Video](https://www.screencast.com/t/dxnVxYAJxX8)  
-git clone https://github.com/prichardsondev/RaspberryPiServer.git  
-for version with pi camera  
-git git clone https://github.com/prichardsondev/RaspberryPiServerWithCamera.git
-
+[Video](https://www.screencast.com/t/dxnVxYAJxX8)
+``` 
+git clone https://github.com/prichardsondev/RaspberryPiServer.git
+cd RaspberryPiServer
+npm i
+node app.js
+```
 
 
 ### Install NginX & Test
-[Video](https://www.screencast.com/t/L4puWFsXBN1g)   
+[Video](https://www.screencast.com/t/L4puWFsXBN1g)
+```   
  sudo apt-get install nginx  
  sudo rm /etc/nginx/sites-enabled/default  
- sudo nano /etc/nginx/sites-available/node  
+ sudo nano /etc/nginx/sites-available/node
+```
 ```
 server {
     listen 80;
@@ -53,8 +57,10 @@ server {
     }
 }
 ```
+```
  sudo ln -s /etc/nginx/sites-available/node /etc/nginx/sites-enabled/node  
  sudo service nginx restart
+```
 
 
 ### Install Dataplicity.com
@@ -63,8 +69,18 @@ https://www.dataplicity.com/
 
 
 ### Install PM2
-[Video](https://www.screencast.com/t/brQiuYSyIy)  
+[Video](https://www.screencast.com/t/brQiuYSyIy)
+```
  sudo npm install pm2 -g  
  pm2 start app.js  
  pm2 startup
+<<<<<<< HEAD
  pm2 save
+=======
+```
+run script generated
+
+```
+pm2 save
+```
+>>>>>>> 093ed2b2f07958f348cc0e7bcd8cc5e897571971
