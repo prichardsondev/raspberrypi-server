@@ -35,15 +35,17 @@ git clone https://github.com/prichardsondev/RaspberryPiServer.git
 cd RaspberryPiServer
 npm i
 node app.js
+
 ```
 
 
 ### Install NginX & Test
 [Video](https://www.screencast.com/t/L4puWFsXBN1g)
 ```   
- sudo apt-get install nginx  
- sudo rm /etc/nginx/sites-enabled/default  
+ sudo apt-get install nginx
+ sudo rm /etc/nginx/sites-enabled/default
  sudo nano /etc/nginx/sites-available/node
+
 ```
 ```
 server {
@@ -74,4 +76,10 @@ https://www.dataplicity.com/
  sudo npm install pm2 -g  
  pm2 start app.js  
  pm2 startup
- pm2 save
+ 
+```
+run script from 'pm2 startup'
+```
+pm2 save
+
+```
