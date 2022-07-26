@@ -10,7 +10,7 @@ In the following steps we will create a Rasbperry Pi IoT Server with Nodejs, Exp
 [IoT Relay](https://dlidirect.com/products/iot-power-relay)  
 
 ### Overview
-[Video](https://www.screencast.com/t/M8Y9wp9y)
+[Video](https://www.screencast.com/t/LSzoEROijFPA)
 
 
 ### Download OS and Boot Pi
